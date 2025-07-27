@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Meter - See the Real Cost of Your Meetings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .pricing-card:hover {
+            transform: scale(1.03);
+        }
+        .hero-image {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-chart-line text-blue-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">Meeting Meter</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#features" class="text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium">Features</a>
+                    <a href="#pricing" class="text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium">Pricing</a>
+                    <a href="#testimonials" class="text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium">FAQ</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#signup" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Stop wasting money on unproductive meetings</h1>
+                    <p class="text-xl mb-8 opacity-90">Meeting Meter shows the real-time dollar cost of every meeting in your calendar based on attendees' salaries.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#signup" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-md text-lg font-semibold text-center transition duration-300">Add to Chrome - It's Free</a>
+                        <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-md text-lg font-semibold text-center transition duration-300">Watch Demo</a>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                        <div class="flex -space-x-2">
+                            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+                            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                        </div>
+                        <p class="ml-4 text-sm opacity-80">Trusted by 500+ teams saving thousands monthly</p>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tech team working together in modern office" class="rounded-xl shadow-2xl border-8 border-white">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Section -->
+    <div id="signup" class="bg-white py-16">
+    <div class="bg-white py-16">
+        <div class="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-gray-900">Get Started</h2>
+                <p class="mt-2 text-sm text-gray-600">
+                    Already have an account? <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Sign in</a>
+                </p>
+            </div>
+            
+            <div class="mt-6">
+                <div>
+                    <button class="w-full flex justify-center items-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg class="h-5 w-5 mr-2" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            <path d="M1 1h22v22H1z" fill="none"/>
+                        </svg>
+                        Continue with Google
+                    </button>
+                </div>
+
+                <div class="mt-6 relative">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-gray-300"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-white text-gray-500">Or continue with email</span>
+                    </div>
+                </div>
+
+                <form class="mt-6 space-y-6" action="#" method="POST">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                        <div class="mt-1">
+                            <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <div class="mt-1">
+                            <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+                        </div>
+
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Forgot your password?</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            Sign up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo Cloud -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm mb-8">SOON TO BE TRUSTED BY INNOVATIVE TEAMS AT</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center">
+                <img class="h-8 mx-auto opacity-60" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+                <img class="h-8 mx-auto opacity-60" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+                <img class="h-8 mx-auto opacity-60" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft">
+                <img class="h-10 mx-auto opacity-60" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify">
+                <img class="h-8 mx-auto opacity-60" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Uber_logo_2018.svg" alt="Uber">
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">The Problem</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Meetings are costing you more than you think
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    The average organization wastes 15-20% of its payroll on unproductive meetings. Without visibility into the real cost, this waste continues unchecked.
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mb-4">
+                            <i class="fas fa-dollar-sign text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Hidden Costs</h3>
+                        <p class="text-gray-500">
+                            A single 1-hour meeting with 5 engineers can cost $500+, but this cost is invisible in traditional calendars.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mb-4">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Time Drain</h3>
+                        <p class="text-gray-500">
+                            Middle managers spend 35% of their time in meetings, while upper management spends 50% or more.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mb-4">
+                            <i class="fas fa-chart-pie text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Low ROI</h3>
+                        <p class="text-gray-500">
+                            67% of executives say excessive meetings keep them from completing their own work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    How Meeting Meter Works
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Transform your calendar into a cost-aware productivity tool with these powerful features.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm feature-card transition duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <i class="fas fa-calendar-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Calendar Cost Overlay</h3>
+                    <p class="text-gray-600 mb-4">
+                        See real-time dollar costs inside each Google Calendar event (e.g., "$125 for 30 min") based on attendees' pro-rated hourly salaries.
+                    </p>
+                    <div class="mt-4">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Calendar overlay" class="rounded-lg border border-gray-200">
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm feature-card transition duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <i class="fas fa-file-csv text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Team Salary Importer</h3>
+                    <p class="text-gray-600 mb-4">
+                        Easily upload team salaries via CSV, Notion table sync, or Google Sheet integration. Keep data secure with role-based access controls.
+                    </p>
+                    <div class="mt-4">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Data import" class="rounded-lg border border-gray-200">
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm feature-card transition duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <i class="fas fa-chart-bar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Meeting Analytics</h3>
+                    <p class="text-gray-600 mb-4">
+                        View weekly/monthly cost summaries, identify top offenders (most expensive recurring meetings), and uncover team time waste patterns.
+                    </p>
+                    <div class="mt-4">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Analytics dashboard" class="rounded-lg border border-gray-200">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Integration</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Simple Setup, Immediate Results
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Get started in minutes and begin optimizing your meetings today.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4">
+                        <span class="text-xl font-bold">1</span>
+                    </div>
+                    <h3 class="font-medium text-gray-900">Install Extension</h3>
+                    <p class="text-gray-500 text-sm mt-1">Add Meeting Meter to Chrome in one click</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4">
+                        <span class="text-xl font-bold">2</span>
+                    </div>
+                    <h3 class="font-medium text-gray-900">Connect Calendar</h3>
+                    <p class="text-gray-500 text-sm mt-1">Authorize access to your Google Calendar</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4">
+                        <span class="text-xl font-bold">3</span>
+                    </div>
+                    <h3 class="font-medium text-gray-900">Upload Salaries</h3>
+                    <p class="text-gray-500 text-sm mt-1">Import team compensation data</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4">
+                        <span class="text-xl font-bold">4</span>
+                    </div>
+                    <h3 class="font-medium text-gray-900">See Costs</h3>
+                    <p class="text-gray-500 text-sm mt-1">Meeting costs appear instantly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Pricing</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Simple, Transparent Pricing
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Start saving money on meetings today with our risk-free plans.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Free Tier -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden pricing-card transition duration-300">
+                    <div class="px-6 py-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                        <p class="text-gray-600 mb-6">Perfect for small teams</p>
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-extrabold text-gray-900">$0</span>
+                            <span class="ml-1 text-lg font-medium text-gray-500">/month</span>
+                        </div>
+                        <p class="mt-4 text-gray-500">Free forever for</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Teams up to 5 people</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Basic calendar overlay</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Weekly cost summaries</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Email support</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-8">
+                        <a href="#" class="w-full block bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-4 rounded-md text-center transition duration-300">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-blue-500 pricing-card transition duration-300 transform">
+                    <div class="px-6 py-8">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Growth</h3>
+                                <p class="text-gray-600 mb-6">For scaling teams</p>
+                            </div>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">Popular</span>
+                        </div>
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-extrabold text-gray-900">$10</span>
+                            <span class="ml-1 text-lg font-medium text-gray-500">/month</span>
+                        </div>
+                        <p class="mt-4 text-gray-500">Billed annually ($120)</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Teams up to 20 people</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Advanced analytics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Notion/Sheets integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Priority support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Team benchmarking</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-8">
+                        <a href="#" class="w-full block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md text-center transition duration-300">Start Free Trial</a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden pricing-card transition duration-300">
+                    <div class="px-6 py-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+                        <p class="text-gray-600 mb-6">For large organizations</p>
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-extrabold text-gray-900">$49</span>
+                            <span class="ml-1 text-lg font-medium text-gray-500">/month</span>
+                        </div>
+                        <p class="mt-4 text-gray-500">Billed annually ($588)</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Unlimited team size</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Department-level analytics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>API access</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Dedicated account manager</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Custom reporting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>SSO & advanced security</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-8">
+                        <a href="#" class="w-full block bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-4 rounded-md text-center transition duration-300">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="testimonials" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Trusted by forward-thinking teams
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah K.">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Sarah K.</h4>
+                            <p class="text-gray-600">COO, Tech Startup</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Meeting Meter helped us cut our meeting costs by 40% in the first quarter. The visibility into meeting ROI has transformed how we collaborate."
+                    </p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/54.jpg" alt="James L.">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">James L.</h4>
+                            <p class="text-gray-600">Engineering Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "As an engineering manager, I was shocked to see how much our standups were costing. We switched to async updates and saved $15k/month."
+                    </p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya M.">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Priya M.</h4>
+                            <p class="text-gray-600">HR Director</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "The salary import feature makes it easy to keep data accurate without manual updates. Our executives love the cost transparency."
+                    </p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Competitive Comparison -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Comparison</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Why Meeting Meter Stands Out
+                </p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Feature</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Meeting Meter</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Clockwise</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Reclaim.ai</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Timeular</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Shows $ cost per meeting</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Salary-based calculations</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Google Calendar overlay</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Actionable cost analytics</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Async meeting roadmap</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><i class="fas fa-times text-red-500"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl mb-6">
+                    Ready to optimize your meeting costs?
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto mb-8 opacity-90">
+                    Join thousands of teams saving time and money with Meeting Meter.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-md text-lg font-semibold transition duration-300">Add to Chrome - It's Free</a>
+                    <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-md text-lg font-semibold transition duration-300">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div id="faq" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">FAQ</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Frequently Asked Questions
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium text-gray-900">Is my salary data secure?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Absolutely. Meeting Meter uses bank-level encryption for all salary data. We never store raw salary information—only calculated hourly rates. You maintain full control over who can view and edit salary data within your organization.
+                        </p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium text-gray-900">How does the salary calculation work?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            We calculate hourly rates by dividing annual salaries by 2,080 working hours (52 weeks × 40 hours). For contractors or part-time employees, you can input custom hourly rates. The meeting cost is then calculated by multiplying each attendee's hourly rate by the meeting duration.
+                        </p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium text-gray-900">What if I don't know exact salaries?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            No problem! You can use industry-standard salary benchmarks by role and location. Many teams find these estimates valuable even without exact numbers. As you gather more precise data, you can update individual salaries.
+                        </p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium text-gray-900">Does this work with Outlook or other calendars?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Currently, Meeting Meter only supports Google Calendar. We're actively working on Outlook integration, which will launch in Q4 2023. Join our mailing list to be notified when it's available.
+                        </p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium text-gray-900">Can I try before I buy?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Yes! Our free plan supports teams up to 5 people with full functionality. For larger teams, we offer a 14-day free trial of our Growth plan with no credit card required.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Roadmap</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Changelog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Webinars</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Instagram</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-chart-line text-blue-400 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold">Meeting Meter</span>
+                </div>
+                <p class="text-gray-400 text-sm">© 2023 Meeting Meter, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ accordion functionality
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
