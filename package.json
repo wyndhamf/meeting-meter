@@ -1,0 +1,16 @@
+{
+  "name": "meetingmeter",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "next-auth": "^4.0.0",
+    "@next-auth/google": "^1.0.0"
+  }
+}
